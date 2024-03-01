@@ -8,7 +8,7 @@ export default function Dropzone(props) {
     (acceptedFiles) => {
       onImageDropped(acceptedFiles[0]);
     },
-    [onImageDropped]
+    [onImageDropped],
   );
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 

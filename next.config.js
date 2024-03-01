@@ -33,9 +33,9 @@ const nextConfig = {
         source: "/deploy",
         destination: "https://vercel.com/templates/next.js/paint-by-text",
         permanent: false,
-      },   
-    ]
-  }
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
