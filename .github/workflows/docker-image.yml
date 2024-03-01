@@ -23,7 +23,7 @@ jobs:
         node-version: 16
 
     - name: Install dependencies
-      run: npm ci
+      run: npm install
 
     - name: Run ESLint
       run: npx eslint .
@@ -35,7 +35,7 @@ jobs:
       run: npm run prettier
 
     - name: Run build
-      run: npm run build
+      run: npm run dev
 
     - name: Run tests
       run: npm run test
