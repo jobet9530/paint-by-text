@@ -12,8 +12,8 @@ export default function Footer({ events, startOver, handleImageDropped }) {
     <footer className="w-full my-8">
       <div className="text-center">
         <Link href="/about" className="lil-button">
-
-          <InfoIcon className="icon" />What is this?
+          <InfoIcon className="icon" />
+          What is this?
         </Link>
 
         {events.length > 1 && (
@@ -26,46 +26,55 @@ export default function Footer({ events, startOver, handleImageDropped }) {
         <Dropzone onImageDropped={handleImageDropped} />
 
         {events.length > 2 && (
-          (<Link
+          <Link
             href={events.findLast((ev) => ev.image).image}
             className="lil-button"
             target="_blank"
-            rel="noopener noreferrer">
-
-            <DownloadIcon className="icon" />Download image
-          </Link>)
+            rel="noopener noreferrer"
+          >
+            <DownloadIcon className="icon" />
+            Download image
+          </Link>
         )}
 
         <Link
           href="https://github.com/replicate/instruct-pix2pix-demo"
           className="lil-button"
           target="_blank"
-          rel="noopener noreferrer">
-
-          <CodeIcon className="icon" />Fork repo
+          rel="noopener noreferrer"
+        >
+          <CodeIcon className="icon" />
+          Fork repo
         </Link>
       </div>
 
       <div className="text-center lil-text mt-8">
-      <div className="inline-block py-2 px-4 border border-yellow-200 rounded-lg bg-[#fef6aa]">
-      🤔 Are you a developer and want to learn how to build this? Check out the{" "}
-        <Link
-          href="https://github.com/replicate/paint-with-words#readme"
-          target="_blank">
-          README
-        </Link>.
-      </div>
+        <div className="inline-block py-2 px-4 border border-yellow-200 rounded-lg bg-[#fef6aa]">
+          🤔 Are you a developer and want to learn how to build this? Check out
+          the{" "}
+          <Link
+            href="https://github.com/replicate/paint-with-words#readme"
+            target="_blank"
+          >
+            README
+          </Link>
+          .
+        </div>
       </div>
 
       <div className="text-center lil-text mt-8">
         Powered by{" "}
-        <Link href="https://www.timothybrooks.com/instruct-pix2pix/" target="_blank">
+        <Link
+          href="https://www.timothybrooks.com/instruct-pix2pix/"
+          target="_blank"
+        >
           InstructPix2Pix
         </Link>
         ,{" "}
         <Link
           href="https://replicate.com/timothybrooks/instruct-pix2pix?utm_source=project&utm_campaign=paintbytext"
-          target="_blank">
+          target="_blank"
+        >
           Replicate
         </Link>
         ,{" "}
@@ -73,7 +82,10 @@ export default function Footer({ events, startOver, handleImageDropped }) {
           Vercel
         </Link>
         , and{" "}
-        <Link href="https://github.com/replicate/instruct-pix2pix-demo" target="_blank">
+        <Link
+          href="https://github.com/replicate/instruct-pix2pix-demo"
+          target="_blank"
+        >
           GitHub
         </Link>
       </div>
